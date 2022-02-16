@@ -18,5 +18,16 @@ document.getElementById('calculete-btn').addEventListener('click', function(){
     const totalValue = totalAmount.innerText;
 
     totalAmount.innerText = totalTk
+
+    const incomeTk = document.getElementById('income');
+    const incomeValue = incomeTk.value;
+    const incomeIns = parseFloat(incomeValue);
+
+    const totaldicriment = incomeIns-totalTk
+   
+    const RemainingTk = document.getElementById('Remaining');
+    const RemainingValue = RemainingTk.innerText;
+    RemainingTk.innerText = totaldicriment
+
     
 })
