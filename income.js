@@ -1,5 +1,10 @@
+
+
 document.getElementById('calculete-btn').addEventListener('click', function(){
    
+
+
+
     const foodTk = document.getElementById('food')
     const foodValue = foodTk.value;
     const foodinc = parseFloat(foodValue);
@@ -15,7 +20,14 @@ document.getElementById('calculete-btn').addEventListener('click', function(){
     const totalTk = foodinc+restFlot+ClothesIns
     
     const totalAmount = document.getElementById('total-amound');
+    
+        
+    
+
+  
+    
     const totalValue = totalAmount.innerText;
+    
 
     totalAmount.innerText = totalTk
 
@@ -25,9 +37,10 @@ document.getElementById('calculete-btn').addEventListener('click', function(){
 
     const totaldicriment = incomeIns-totalTk
    
-    const RemainingTk = document.getElementById('Remaining');
-    const RemainingValue = RemainingTk.innerText;
-    RemainingTk.innerText = totaldicriment
+    const balanceTk = document.getElementById('balance');
+    const balanceValue =  balanceTk.innerText;
+   
+    balanceTk.innerText = totaldicriment
 
     
 })
