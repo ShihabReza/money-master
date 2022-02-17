@@ -9,6 +9,7 @@ document.getElementById('calculete-btn').addEventListener('click', function(){
     const foodValue = foodTk.value;
     const foodinc = parseFloat(foodValue);
    
+   
     const rentTk = document.getElementById('rent');
     const rentValue = rentTk.value;
     const restFlot = parseFloat(rentValue);
@@ -21,15 +22,20 @@ document.getElementById('calculete-btn').addEventListener('click', function(){
     
     const totalAmount = document.getElementById('total-amound');
     
-        
-    
-
-  
-    
-    const totalValue = totalAmount.innerText;
+        if(totalTk>0){
+            const totalValue = totalAmount.innerText;
     
 
     totalAmount.innerText = totalTk
+    
+   
+        }
+    
+    
+    // const totalValue = totalAmount.innerText;
+    
+
+    // totalAmount.innerText = totalTk
 
     const incomeTk = document.getElementById('income');
     const incomeValue = incomeTk.value;
@@ -38,9 +44,16 @@ document.getElementById('calculete-btn').addEventListener('click', function(){
     const totaldicriment = incomeIns-totalTk
    
     const balanceTk = document.getElementById('balance');
-    const balanceValue =  balanceTk.innerText;
+
+    if(totaldicriment<10000){
+        const balanceValue =  balanceTk.innerText;
    
-    balanceTk.innerText = totaldicriment
+        balanceTk.innerText = totaldicriment
+      
+    }
+    // const balanceValue =  balanceTk.innerText;
+   
+    // balanceTk.innerText = totaldicriment
 
     
 })

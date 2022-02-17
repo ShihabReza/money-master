@@ -1,0 +1,16 @@
+/* font-link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* font-family */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* input-style */
+.input-box{
+    background-color: rgb(249, 251, 252);
+    padding:10px;
+    font-size:15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
