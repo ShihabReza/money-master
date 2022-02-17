@@ -73,8 +73,8 @@ function update (){
    
     const balanceTk = document.getElementById('balance');
 
-   if(balanceTk.innerText<10000){
-    alert("plese inter your number")
+   if(balanceTk.innerText>10000){
+    return alert("plese inter your number")
    }
 
     const balanceValue =  balanceTk.innerText;
