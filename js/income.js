@@ -16,7 +16,7 @@ function update (){
     // food-condition
 
     if(foodValue<0){
-        return alert("plese inter your number")
+        return alert("plese inter your court number")
      }
       
     
@@ -29,7 +29,7 @@ function update (){
     // rent-condition
 
     if(rentValue<0){
-      return alert("plese inter your number")
+      return alert("plese inter your court number")
   }
  
     //   Clothes-itam
@@ -41,7 +41,7 @@ function update (){
     // Clothes-condition
 
     if(ClothesValue<0){
-      return alert("plese inter your number")
+      return alert("plese inter your court number")
   }
   
 
@@ -74,7 +74,7 @@ function update (){
     const balanceTk = document.getElementById('balance');
 
    if(balanceTk.innerText>10000){
-    return alert("plese inter your number")
+    return alert("plese inter your court number")
    }
 
     const balanceValue =  balanceTk.innerText;
@@ -85,6 +85,8 @@ function update (){
 
     
 }
+
+// click handler function
 
 document.getElementById('calculete-btn').addEventListener('click', function(){
    
